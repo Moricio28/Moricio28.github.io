@@ -1,0 +1,105 @@
+<html>
+<title>W3.CSS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="w3.css">
+<body>
+<img src="Realmadrid.png" style="width:100%; height:40%">
+
+<div class="w3-bar w3-black">
+	<button class="w3-bar-item w3-button" onclick="openKota('profile')">Profile</button>
+	<button class="w3-bar-item w3-button" onclick="openKota('pelatih')">Carlo Ancelotti</button>
+	<button class="w3-bar-item w3-button" onclick="openKota('stadion')">Stadion</button>
+	<button class="w3-bar-item w3-button" onclick="openKota('benzema')">Benzema</button>
+	<button class="w3-bar-item w3-button" onclick="openKota('marcelo')">Marcelo</button>
+	<button class="w3-bar-item w3-button" onclick="openKota('modric')">Modric</button>
+</div>
+
+<div id="Home" class="w3-container kota kota w3-animate-fading" style="">
+<center>
+<h3>WELCOME</h3>
+<hr>
+<h4>REAL MADRID</h4>
+</div>
+
+<div id="profile" class="w3-container kota kota w3-animate-zoom" style="display:none; margin-top:5%;">
+<center>
+<form>
+	<table border="0">
+		<p>
+		<tr>
+            <td>Nama</td>
+            <td>: Fauzan Fadhil Moricio</td>
+        </tr>
+        <tr>
+            <td>NIM</td>
+            <td>: 10121077</td>
+        </tr>
+        <tr>
+            <td>Universitas</td>
+            <td>: Universitas Komputer Indonesia</td>
+        </tr>
+        <tr>
+            <td>Prodi</td>
+            <td>: Teknik dan Ilmu Komputer</td>
+        </tr>
+        <tr>
+			<td>Jurusan</td>
+			<td>: Teknik Informatika</td>
+        </tr>
+        <tr>
+            <td>Kelas</td>
+            <td>: IF-2</td>
+        </tr>
+        </p>
+    </table>
+</form>
+</center>	
+</div>
+
+<div id="pelatih" class="w3-container kota kota w3-animate-zoom" style="display:none">
+	<h2>Carlo Ancelotti</h2>
+	<p>Pelatih asal Italia, Carlo Ancelotti, resmi menjadi pelatih baru Real Madrid mulai musim 2021-2022</p>
+	<img src="carlo.jpg" style="width:40%; height:30%">
+</div>
+
+<div id="stadion" class="w3-container kota kota w3-animate-top" style="display:none">
+	<h2>Santiago Bernabéu</h2>
+	<p>Stadion Santiago Bernabéu adalah sebuahstadion sepak bola di Madrid, Spanyol. 
+	   Dengan kapasitas tempat duduk saat ini 81.044, 
+	   telah menjadi stadion kandang Real Madrid sejak selesai dibangun pada tahun 1947.</p>
+	<img src="stadion.jpg" style="width:40%; height:30%">
+</div>
+
+<div id="benzema" class="w3-container kota kota w3-animate-left" style="display:none">
+	<h2>Benzema</h2>
+	<p>Karim Mostafa Benzema adalah seorang pemain sepak bola profesional 
+	   Prancis keturunan Aljazair yang saat ini bermain untuk tim La Liga Spanyol, Real Madrid.</p>
+	<img src="benzema.jpg" style="width:30%; height:30%">
+</div>
+
+<div id="marcelo" class="w3-container kota kota w3-animate-right" style="display:none">
+	<h2>Marcelo</h2>
+	<p>Marcelo Vieira da Silva Júnior adalah seorang pemain sepak bola 
+	   Brasil yang pernah bermain untuk Real Madrid dan tim nasional sepak bola Brasil.</p>
+	<img src="marcelo.jpg" style="width:30%; height:30%">
+</div>
+
+<div id="modric" class="w3-container kota kota w3-animate-bottom" style="display:none">
+	<h2>Modric</h2>
+	<p>Luka Modrić adalah pemain sepak bola profesional berkebangsaan Kroasia yang 
+	   bermain sebagai gelandang untuk Real Madrid di La Liga Spanyol dan tim nasional Kroasia.</p>
+	<img src="modric.jpg" style="width:30%; height:30%">
+</div>
+
+<script>
+function openKota(namaKota) {
+var i;
+var x = document.getElementsByClassName("kota");
+for (i = 0; i < x.length; i++) {
+x[i].style.display = "none";
+}
+document.getElementById(namaKota).style.display = "block";
+}
+</script>
+</body>
+</html>
